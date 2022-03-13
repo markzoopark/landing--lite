@@ -1,0 +1,26 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+.btn {
+	padding: $btn-h $base * 13;
+	font-weight: 900;
+	text-decoration: none;
+	color: $color-text;
+	background-color: $color-primary--light;
+	border-radius: $base * 6;
+	transition: 0.1s;
+	&--l {
+		padding: $btn-h $base * 28;
+		@media (max-width: $phone) {
+			padding: $btn-h $base * 20;
+		}
+		@media (max-width: $phone-s) {
+			padding: $base * 4 $base * 13;
+		}
+	}
+
+	&:hover {
+		background-color: darken($color-primary--light, 10%);
+	}
+}

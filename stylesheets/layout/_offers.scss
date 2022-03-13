@@ -1,0 +1,147 @@
+.offers {
+	margin-bottom: $base * 50;
+
+	@media (max-width: $tablet) {
+		margin-bottom: $base * 30;
+	}
+}
+.offer {
+	&:not(:last-child) {
+		margin-bottom: $base * 30;
+		@media (max-width: $desktop) {
+			margin-bottom: $base * 20;
+		}
+		@media (max-width: $tablet) {
+			margin-bottom: $base * 20;
+		}
+		@media (max-width: $phone-s) {
+			margin-bottom: $base * 13;
+		}
+	}
+	&:nth-child(1):before {
+		content: url(/img/offer-1.png);
+		position: absolute;
+		top: 50%;
+		left: 0;
+		@media (max-width: 1224px) {
+			content: '';
+		}
+	}
+	&:nth-child(1):after {
+		content: url(/img/offer-2.png);
+		position: absolute;
+		top: 50%;
+		right: 0;
+		@media (max-width: 1224px) {
+			content: '';
+		}
+	}
+	&:nth-child(2):before {
+		content: url(/img/offer-3.png);
+		position: absolute;
+		top: 50%;
+		left: 0;
+		@media (max-width: 1224px) {
+			content: '';
+		}
+	}
+	&:nth-child(2):after {
+		content: url(/img/offer-4.png);
+		position: absolute;
+		top: 50%;
+		right: 0;
+		@media (max-width: 1224px) {
+			content: '';
+		}
+	}
+	&:nth-child(3):before {
+		content: url(/img/offer-5.png);
+		position: absolute;
+		top: 35%;
+		left: 0;
+		@media (max-width: 1224px) {
+			top: 120%;
+			left: 50%;
+			transform: translate(-50%, 0);
+		}
+	}
+	&:nth-child(3):after {
+		content: url(/img/offer-6.png);
+		position: absolute;
+		top: 35%;
+		right: 0;
+		@media (max-width: 1224px) {
+			content: '';
+		}
+	}
+
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: $base * 14 $base * 26;
+	@media (max-width: $desktop) {
+		padding: $base * 12 $base * 20;
+	}
+	@media (max-width: $tablet) {
+		padding: $base * 10 $base * 18;
+	}
+	@media (max-width: $phone-s) {
+		padding: $base * 12;
+	}
+
+	border: $base solid $color-primary--light;
+	box-shadow: inset 0 0 $base * 2 $base * 0.6 $color-primary--light,
+		0 0 $base * 2 $base * 0.6 $color-primary--light;
+	border-radius: $base * 6;
+	&__desc {
+		font-weight: 900;
+		font-size: $base * 4;
+		line-height: $base * 5;
+		margin: 0;
+		padding: 0;
+		margin-bottom: $base * 4;
+		@media (max-width: $tablet) {
+			font-size: $base * 3.5;
+			margin-bottom: $base * 2;
+		}
+		@media (max-width: $phone-s) {
+			text-align: center;
+			font-size: $base * 3;
+			line-height: $base * 4;
+		}
+	}
+	&__name {
+		text-align: center;
+	}
+	&__price {
+		margin: 0;
+		padding: 0;
+		margin-top: $base * 1.5;
+		font-weight: 900;
+		font-size: $base * 4;
+		line-height: $base * 5;
+		@media (max-width: $tablet) {
+			margin-top: 0;
+			font-size: $base * 3.5;
+		}
+	}
+	&__btn {
+		position: absolute;
+		bottom: -$btn-h * 2 + $base * 2;
+	}
+	&__more {
+		position: absolute;
+		bottom: -$base * 14;
+
+		color: $color-text;
+		font-weight: 900;
+		@media (max-width: $phone-s) {
+			overflow: hidden;
+			padding: 0; /* 1 */
+			text-indent: 101%;
+			white-space: nowrap;
+		}
+	}
+}

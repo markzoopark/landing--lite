@@ -1,0 +1,16 @@
+// -----------------------------------------------------------------------------
+// This file contains CSS helper classes.
+// -----------------------------------------------------------------------------
+
+.clearfix::after {
+	clear: both;
+	content: '';
+	display: table;
+}
+
+.container {
+	max-width: 1250px;
+	margin: 0 auto;
+	padding: 0 45px;
+	width: 100%;
+}

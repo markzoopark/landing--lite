@@ -1,0 +1,51 @@
+/**
+ * Basic typography style for copy text
+ */
+h1 {
+	margin: 0;
+	padding: 0;
+	font-weight: 900;
+	font-size: $base * 10;
+	line-height: $base * 11;
+	@media (max-width: $tablet) {
+		font-size: $base * 8;
+		line-height: $base * 8;
+	}
+	@media (max-width: $phone-s) {
+		font-size: $base * 6;
+		line-height: $base * 8;
+	}
+}
+
+h2 {
+	margin: 0;
+	padding: 0;
+	font-size: $base * 10;
+	line-height: $base * 13;
+	@media (max-width: $desktop) {
+		font-size: $base * 8;
+	}
+	@media (max-width: $tablet) {
+		font-size: $base * 6;
+		line-height: $base * 8;
+	}
+	@media (max-width: $phone-s) {
+		font-size: $base * 5;
+		line-height: $base * 7;
+	}
+}
+
+body {
+	color: $color-text;
+	font-weight: 600;
+	font-size: $base * 3.2;
+	line-height: 150%;
+	@media (max-width: $phone-s) {
+		font-size: $base * 3;
+		line-height: $base * 5;
+	}
+}
+
+b {
+	font-weight: 900;
+}
